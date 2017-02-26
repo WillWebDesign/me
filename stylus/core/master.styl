@@ -1,0 +1,78 @@
+@import "nib"
+@import "nib/vendor"
+@import "normalize.styl"
+
+vendor-prefixes = o ms moz webkit official
+
+body
+  font-family: 'Sansita', sans-serif;
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?62h64s');
+  src:  url('fonts/icomoon.eot?62h64s#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?62h64s') format('truetype'),
+    url('fonts/icomoon.woff?62h64s') format('woff'),
+    url('fonts/icomoon.svg?62h64s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu nav ul li a
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+.menu nav ul li
+  list-style: none;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+.menu nav ul
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+.menu
+  width: 15vw;
+  height: 100vh;
+  background: rgba(0,0,0,.7);
+  color: white;
+.menu nav ul li a i
+  font-size: 2.7em;
+  color: white;
+.icon-home:before
+  content: "\e903";
+.icon-me:before
+  content: "\e9e7";
+.icon-resume:before
+  content: "\e921";
+.icon-skill:before
+  content: "\e955";
+.icon-project:before
+  content: "\ea81";
+.icon-blog:before
+  content: "\e983";
+.icon-contact:before
+  content: "\ea84";
