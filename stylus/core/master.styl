@@ -13,21 +13,6 @@ body iframe
   width: 100vw;
   height: 100vh;
 
-.content::scrollbar
-  width: 5px;
-  height: 5px;
-  background-color: #F5F5F5;
-
-.content::scrollbar-track
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px;
-  background-color: none;
-
-.content::scrollbar-thumb
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: grey;
-
 @keyframes animImgPerfil
 	10%
 		transform:translateX(3px) rotate(2deg)
@@ -180,7 +165,7 @@ body iframe
   height: 100vh;
   position: relative;
   float: left;
-  overflow-y: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
 .content article
   height: 100vh;
