@@ -1,15 +1,17 @@
 $(function(){
+  //scrollTop converter to scrollLeft in content
   $(".content").mousewheel(function(event, delta) {
     this.scrollLeft -= (delta * 50);
     event.preventDefault();
-    if(delta > 0 && this.scrollLeft < 1 )
-    {
-      $('body,html').animate({scrollTop: $("body").offset().top},"slow");
-    }
+    // console.log(this.scrollLeft);
   });
-  $('#menu-me').click(function(){
-console.log("verga");
-	  	$('.scrollX').animate({scrollTop: $(".me").offset().top},"slow");
+  //control scroll for content sections
+  $('.menu-a').click(function(event){
+      event.preventDefault();
+      var ancla= $(this).attr("href");
 
-	 });
+      var posicion = ($(ancla).offset().left)+($('.content').scrollLeft()-($(window).width()*12.5/100));
+
+      $('.content').animate({scrollLeft: posicion},"slow");
+   });
 });
