@@ -211,6 +211,43 @@ body iframe
   margin: 0;
   font-family: 'Courgette', cursive;
   text-align: right;
+.me
+  display flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+.image-me
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  background-image: url(../assets/images/me.jpg);
+  width: 54vw;
+  height: 57vh;
+  transition: filter 1s linear;
+.image-me:hover
+  filter: grayscale(1);
+.texto-me
+  width: 50vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+.texto-me h2
+  margin-top: 0;
+  color: #09c;
+.texto-me a
+  margin: 0 !important;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: .5s ease-in-out;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+.texto-me a:hover
+  color: #4C4846;
+  background: #ddd;
 .icon-home:before
   content: "\e903";
 .icon-me:before
